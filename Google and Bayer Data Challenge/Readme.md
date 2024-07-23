@@ -36,6 +36,8 @@ Analysis revealed distinct seasonal patterns in month and week of year, suggesti
 
 <img src="./images/ Seasonality.PNG" width="60%">
 
+
+[Back to Table of Contents](#table-of-contents)<br>
 # Part 2: Creating the Shape of the Futures Hotel Packages
 
 **Objective:** Understand customer stay duration to create attractive package options for different lengths of stay.
@@ -64,6 +66,8 @@ Example: Offering a discount for a 5-day stay might decrease revenue from existi
 
 <img src="./images/Package.PNG" width="70%">
 
+
+[Back to Table of Contents](#table-of-contents)<br>
 # Part 3: Comprehending the Cancellation Foundations
 
 **Objective:** Establish a cancellation policy to minimize cancellation losses.
@@ -86,6 +90,8 @@ Cancelation Leadtimes and policy: To simplify our policy, we will use multiples 
 
 <img src="./images/Cancelation with leadtime less than 60 days.PNG" width="70%">
 
+
+[Back to Table of Contents](#table-of-contents)<br>
 # Part 4: Preparing the IT Systems for Demand
 
 **Objective:** Identify peak demand periods to ensure sufficient IT resources are available.
@@ -102,7 +108,10 @@ Our data only includes arrival dates from July 1, 2015, to August 31, 2017. Howe
 * The data reveals significant peaks in bookings during the first six weeks of the year with a maximum of 2,066 bookings observed at the highest point (first week).
 
  <img src="./images/Avg booking per week.PNG" width="70%">
+<br>
+<br>
 
+[Back to Table of Contents](#table-of-contents)<br>
 
 # Connect with author:
 
