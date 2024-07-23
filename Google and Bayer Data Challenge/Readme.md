@@ -1,6 +1,6 @@
 <p align="center">
   <a href="#part-1-understanding-the-seasonality-of-bookings">Part 1 - Pricing Strategy </a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="##part-2-creating-the-shape-of-the-futures-hotel-packages">Part 2 - Packages </a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#part-2-creating-the-shape-of-the-futures-hotel-packages">Part 2 - Packages </a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#part-3-comprehending-the-cancellation-foundations">Part 3 - Cancellation Policy</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#part-4-preparing-the-it-systems-for-demand">Part 4 - Booking</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 
@@ -35,7 +35,7 @@ Analysis revealed distinct seasonal patterns in month and week of year, suggesti
 
 <img src="./images/ Seasonality.PNG" width="60%">
 
-# Part 2: CREATING THE SHAPE OF THE FUTURES HOTEL PACKAGES
+# Part 2: Creating the Shape of the Futures Hotel Packages
 
 **Objective:** Understand customer stay duration to create attractive package options for different lengths of stay.
 
