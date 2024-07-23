@@ -108,8 +108,7 @@ Our data only includes arrival dates from July 1, 2015, to August 31, 2017. Howe
 * The data reveals significant peaks in bookings during the first six weeks of the year with a maximum of 2,066 bookings observed at the highest point (first week).
 
  <img src="./images/Avg booking per week.PNG" width="70%">
-<br>
-<br>
+
 
 [Back to Table of Contents](#table-of-contents)<br>
 
