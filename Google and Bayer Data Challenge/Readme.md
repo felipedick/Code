@@ -1,3 +1,4 @@
+# Table of Contents
 <p align="center">
   <a href="#part-1-understanding-the-seasonality-of-bookings">Part 1 - Pricing Strategy </a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#part-2-creating-the-shape-of-the-futures-hotel-packages">Part 2 - Packages </a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -102,3 +103,13 @@ Our data only includes arrival dates from July 1, 2015, to August 31, 2017. Howe
 
  <img src="./images/Avg booking per week.PNG" width="70%">
 
+
+# Connect with author:
+
+<a href="https://www.linkedin.com/in/felipe-dick" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="Link" width="30" height="30">    
+</a>
+<br>
+<br>
+
+[Back to Table of Contents](#table-of-contents)<br>
