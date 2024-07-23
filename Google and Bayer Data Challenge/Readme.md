@@ -2,22 +2,83 @@
 
 **Objective:** Analyze booking trends to create a dynamic pricing model that increases revenue during peak seasons.
 
-**Approach:**
+**Findings:**
 
-1. **Data Loading and Cleaning:** Load the booking data from `data.csv`, handle any missing values or inconsistencies.
-2. **Visualization:** Create a line plot that shows the number of bookings per day and month to identify seasonal patterns.
-3. **Pricing Model:**  Based on the identified seasonal patterns, propose a pricing model with 3-5 categories (e.g., Low Season, Shoulder Season, Peak Season).
+Data Seasonality was analyzed by using different types of groups, such as year, day of the month and week of the year. 
+Months and Week of the year were shown to be more seasonal while day besides less seasonal would make reservations more complex to manage. 
+Final solution proposed adopting the following Seasonality Strategy
+1. Peak season (red): 17 to 21 (5 weeks)
+2. High Season (orange): 13 to 16, 22 to 26, 39 to 42(13 weeks)
+3. Shoulder Season (blue): 7 to 12 and 27 to 38, 43 to 49 (25 weeks)
+4. Low season (gray): 1 to 6 and 50 to 53 (10 weeks)
+
+
+<img src="./images/ Seasonality.PNG" width="60%">
+
+## Part 2: Understanding the Seasonality of Bookings
+
+**Objective:** Understand customer stay duration to create attractive package options for different lengths of stay.
 
 **Findings:**
 
-* **Data Seasonality was analyzed by using different types of groups, such as year, day of the month and week of the year. 
-Months and Week of the year were shown to be more seasonal while day besides less seasonal would make reservations more complex to manage. 
-Final solution proposed adopting the following Seasonality Strategyu
-- Peak season (red): 17 to 21 (5 weeks)
-- High Season (orange): 13 to 16, 22 to 26, 39 to 42(13 weeks)
-- Shoulder Season (blue): 7 to 12 and 27 to 38, 43 to 49 (25 weeks)
-- Low season (gray): 1 to 6 and 50 to 53 (10 weeks)
+Scenarios for Package Decisions: **5, 9 and 15 days**
 
+When a Package is Not Attractive:
+* Higher Prices for Extended Stays:
+  If the price for an additional day (D+1) is significantly higher than the current day (D+0), it is not attractive to offer a package for the extended stay.
+  Example: If the price for a 7-day stay is much higher than for a 6-day stay, it doesn't make sense to create a package for the 7th day.
+Frequent Stays without Price Sensitivity:
 
+* If the price for D+1 is equal to or lower than D+0, but stays of D+1 are more frequent than D+0, price is not a significant factor for extending the stay.
+  Example: Even if the price for a 7-day stay is significantly lower than a 6-day stay, if 6-day stays are already popular, reducing the price for the 7th day won't attract many additional customers.
 
-![Seasonality chart](Google and Bayer Data Challenge/images/ Seasonality.PNG)
+When a Package is Attractive:
+* Lower Prices for Extended Stays with Less Frequent Occurrence:
+If the price for an additional day (D+1) is lower than the current day (D+0) and stays of D+1 are less frequent than D+0, offering a package could be beneficial.
+Example: Reducing the price for a 15-day stay might encourage customers who book for 14 days to extend their stay by an additional day.
+
+* Equal or Slightly Higher Prices for Less Frequent Extended Stays:
+If the price for D+1 is equal to or only slightly higher than D+0, and stays of D+1 are significantly less frequent than D+0, a discounted package might be appealing.
+Example: Offering a discount for a 5-day stay might decrease revenue from existing 4-day stays, but this could be offset by the increased revenue from customers extending their stays from 4 to 5 days.
+
+<img src="./images/Package.PNG" width="70%">
+
+## Part 3: Comprehending the Cancellation Foundations
+
+**Objective:** Establish a cancellation policy to minimize cancellation losses.
+
+**Assumption:**
+
+Cancelation Leadtimes and policy: To simplify our policy, we will use multiples of 30 days for cancellation lead times, with the exception of the first penalty period, which will apply closer to the booked date. This approach uses the following:
+* 30 days and 150 days as key reference points, aligning closely with the beginning of the first and third quarters.
+* The proximity of the arrival date to the booking date significantly reduces the likelihood of securing replacement bookings. Consequently, the first penalty period will be established for bookings made less than 30 days in advance.
+
+**Findings:**
+
+1. 0 - 3 days: 90% (after 3 days, cancelations decrease)
+2. 3 - 30 days: 75% (nearly 35% of all cancelations)
+3. 31 - 60 days: 50% (nearly 50% of all cancelations)
+4. 61 - 150 days: 25% (nearly 80% of all cancelation)
+5. 151 days or more : 0%
+
+<img src="./images/Histogram Cancelation leadtime.PNG" width="70%">
+
+<img src="./images/Cancelation with leadtime less than 60 days.PNG" width="70%">
+
+## Part 4: Preparing the IT Systems for Demand
+
+**Objective:** Identify peak demand periods to ensure sufficient IT resources are available.
+
+**Assumption:**
+
+Our data only includes arrival dates from July 1, 2015, to August 31, 2017. However, booking dates can extend beyond this range. For instance, we have bookings as early as June 24, 2013, indicating that bookings made in 2013 and 2014 with arrivals before 2015 might be missing. Similarly, bookings made in 2017 for arrivals in 2018 are also likely absent. To address this data gap, we'll filter our analysis based on a calculated range of booking dates.
+
+* Start Date: July 1, 2015 (matching the earliest arrival date).
+* End Date: July 31, 2016. We've determined that 95% of bookings have a lead time of 373 days or less. This means there's a high probability that bookings made within 373 days before the latest arrival date (August 31, 2017), which is August 23, 2016, are included in our data. Bookings with longer lead times are considered outliers and will have minimal impact on our analysis. To ensure we have full months, we'll use July 31, 2016, as our end date.
+
+**Findings:**
+
+* The data reveals significant peaks in bookings during the first six weeks of the year with a maximum of 2,066 bookings observed at the highest point (first week).
+
+ <img src="./images/Avg booking per week.PNG" width="70%">
+
