@@ -1,4 +1,14 @@
-## Part 1: Understanding the Seasonality of Bookings
+<p align="center">
+  <a href="#part-1-understanding-the-seasonality-of-bookings">Part 1</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#aperte-o-play">Acesse o app</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#part-4-preparing-the-it-systems-for-demand">Part 4</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#licença">Licença</a>&nbsp;&nbsp;&nbsp;
+
+- [Go to Part 4: Preparing the IT Systems for Demand](#part-4-preparing-the-it-systems-for-demand)
+- [Uso](#uso)
+- [Contribuindo](#contribuindo)
+# Part 1: Understanding the Seasonality of Bookings
 
 **Objective:** Analyze booking trends to create a dynamic pricing model that increases revenue during peak seasons.
 
@@ -29,7 +39,7 @@ Analysis revealed distinct seasonal patterns in month and week of year, suggesti
 
 <img src="./images/ Seasonality.PNG" width="60%">
 
-## Part 2: Understanding the Seasonality of Bookings
+# Part 2: Understanding the Seasonality of Bookings
 
 **Objective:** Understand customer stay duration to create attractive package options for different lengths of stay.
 
@@ -57,7 +67,7 @@ Example: Offering a discount for a 5-day stay might decrease revenue from existi
 
 <img src="./images/Package.PNG" width="70%">
 
-## Part 3: Comprehending the Cancellation Foundations
+# Part 3: Comprehending the Cancellation Foundations
 
 **Objective:** Establish a cancellation policy to minimize cancellation losses.
 
@@ -79,7 +89,7 @@ Cancelation Leadtimes and policy: To simplify our policy, we will use multiples 
 
 <img src="./images/Cancelation with leadtime less than 60 days.PNG" width="70%">
 
-## Part 4: Preparing the IT Systems for Demand
+# Part 4: Preparing the IT Systems for Demand
 
 **Objective:** Identify peak demand periods to ensure sufficient IT resources are available.
 
