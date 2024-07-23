@@ -20,4 +20,4 @@ Final solution proposed adopting the following Seasonality Strategyu
 
 
 
-(/images/ Seasonality.PNG)
+![Seasonality chart](Google and Bayer Data Challenge/images/ Seasonality.PNG)
