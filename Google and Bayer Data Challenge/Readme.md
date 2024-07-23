@@ -27,7 +27,7 @@ Analysis revealed distinct seasonal patterns in month and week of year, suggesti
 * Discount Pricing: Offer discounts to attract guests during this period.
 * Special Packages: Create packages that highlight activities or experiences available during the shoulder seasons.
 * Weekday Specials: Incentivize midweek travel with lower rates.
-4. Low Season (Gray):1 to 6 and 50 to 53 (10 weeks
+4. Low Season (Gray):1 to 6 and 50 to 53 (10 weeks)
 * Deep Discounts: Apply significant discounts to attract budget-conscious travelers.
 * Stay Longer, Save More" Deals: Encourage longer stays with progressive discounts based on the length of stay.
 * Focus on Domestic Travelers: Target local and regional travelers seeking affordable getaways.
