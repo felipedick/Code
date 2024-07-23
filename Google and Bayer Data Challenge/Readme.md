@@ -4,14 +4,28 @@
 
 **Findings:**
 
-Data Seasonality was analyzed by using different types of groups, such as year, day of the month and week of the year. 
-Months and Week of the year were shown to be more seasonal while day besides less seasonal would make reservations more complex to manage. 
-Final solution proposed adopting the following Seasonality Strategy
-1. Peak season (red): 17 to 21 (5 weeks)
-2. High Season (orange): 13 to 16, 22 to 26, 39 to 42(13 weeks)
-3. Shoulder Season (blue): 7 to 12 and 27 to 38, 43 to 49 (25 weeks)
-4. Low season (gray): 1 to 6 and 50 to 53 (10 weeks)
+Analysis revealed distinct seasonal patterns in month and week of year, suggesting significant variations in booking volume. Daily fluctuations were less impactful. To streamline reservation management, the proposed seasonality strategy prioritizes week of year patterns.
 
+**Price proposal:** 
+
+1. Peak season (red): 17 to 21 (5 weeks)
+* Highest Prices: Apply the highest price increases during this period.
+* Consider Packages: Offer exclusive packages that bundle amenities or experiences to enhance perceived value.
+* Minimum Stay Requirements: Implement minimum stay requirements during peak weekends to maximize occupancy.
+2. High Season (Orange): 13 to 16, 22 to 26, 39 to 42(13 weeks) 
+* Premium Pricing: Utilize a premium pricing model, charging higher rates than shoulder season but lower than peak season.
+* Targeted Promotions: Offer special rates or packages for specific guest segments (e.g., families, couples).
+* Early Bird Discounts: Encourage bookings further in advance with discounted rates.
+3. Shoulder Season (Blue):7 to 12 and 27 to 38, 43 to 49 (25 weeks) 
+* Discount Pricing: Offer discounts to attract guests during this period.
+* Special Packages: Create packages that highlight activities or experiences available during the shoulder seasons.
+* Weekday Specials: Incentivize midweek travel with lower rates.
+4. Low Season (Gray):1 to 6 and 50 to 53 (10 weeks
+* Deep Discounts: Apply significant discounts to attract budget-conscious travelers.
+* Stay Longer, Save More" Deals: Encourage longer stays with progressive discounts based on the length of stay.
+* Focus on Domestic Travelers: Target local and regional travelers seeking affordable getaways.
+
+**Additional analysis by location, hotel type, or market segment could offer a more granular view of seasonality patterns, potentially leading to a more tailored strategy. However, this added complexity may require more sophisticated management.**
 
 <img src="./images/ Seasonality.PNG" width="60%">
 
@@ -23,7 +37,7 @@ Final solution proposed adopting the following Seasonality Strategy
 
 Scenarios for Package Decisions: **5, 9 and 15 days**
 
-When a Package is Not Attractive:
+1. When a Package is Not Attractive:
 * Higher Prices for Extended Stays:
   If the price for an additional day (D+1) is significantly higher than the current day (D+0), it is not attractive to offer a package for the extended stay.
   Example: If the price for a 7-day stay is much higher than for a 6-day stay, it doesn't make sense to create a package for the 7th day.
@@ -32,7 +46,7 @@ Frequent Stays without Price Sensitivity:
 * If the price for D+1 is equal to or lower than D+0, but stays of D+1 are more frequent than D+0, price is not a significant factor for extending the stay.
   Example: Even if the price for a 7-day stay is significantly lower than a 6-day stay, if 6-day stays are already popular, reducing the price for the 7th day won't attract many additional customers.
 
-When a Package is Attractive:
+2. When a Package is Attractive:
 * Lower Prices for Extended Stays with Less Frequent Occurrence:
 If the price for an additional day (D+1) is lower than the current day (D+0) and stays of D+1 are less frequent than D+0, offering a package could be beneficial.
 Example: Reducing the price for a 15-day stay might encourage customers who book for 14 days to extend their stay by an additional day.
@@ -53,7 +67,7 @@ Cancelation Leadtimes and policy: To simplify our policy, we will use multiples 
 * 30 days and 150 days as key reference points, aligning closely with the beginning of the first and third quarters.
 * The proximity of the arrival date to the booking date significantly reduces the likelihood of securing replacement bookings. Consequently, the first penalty period will be established for bookings made less than 30 days in advance.
 
-**Findings:**
+**Proposal:**
 
 1. 0 - 3 days: 90% (after 3 days, cancelations decrease)
 2. 3 - 30 days: 75% (nearly 35% of all cancelations)
