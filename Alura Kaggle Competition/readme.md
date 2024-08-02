@@ -16,6 +16,10 @@
 The goal of the competition is to predict whether a credit card transaction is fraudulent or not. The competition lasted for three months, from January 30, 2024, to April 5, 2024.
 
 O objetivo da competição era prever qual a probablidade de uma transação de cartão de crédito ser fraude ou não. A competição durou cerca de 3 meses, de 30 de Janeiro de 2024 a 5 de Abril de 2024.
+##
+The project was designed using 
+
+<a href="./Kaggle_Competition_Award.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 
 ## Connect with author:
 
